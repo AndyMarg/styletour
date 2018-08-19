@@ -1,0 +1,77 @@
+@import "partials/mixins";
+@import "partials/params";
+
+#header {
+
+	& .menu-top {
+
+		& .navbar-collapse {
+			padding-right: 0;
+			padding-left: 0;
+		}
+
+		& .navbar {
+			margin-bottom: 0;
+			padding: 20px 0;
+			text-transform: uppercase;
+			background-color: #fff;
+
+			& li > a  {
+				color: $default-menu-color;
+
+				&:hover {color: $default-menu-hover-color;}
+
+			}
+
+			& .navbar-left li > a {
+				padding: 14px;
+			}
+
+			& .btn-red {
+				margin-left: 10px;
+				padding: 5px 20px;
+				font-size: 14px;
+				@include default-button-colorize;
+
+				& .glyphicon {margin-right: 10px;}
+			}
+
+			& .flag {
+				position: relative;
+				top: -1px;
+				margin-right: 5px;
+			}
+		}
+	} // .menu-top
+
+@media only screen and (max-width: 1200px) {
+
+	& .menu-top {
+		& .navbar-nav {float: none!important;}
+	}
+
+}
+
+@media only screen and (max-width: 768px) {
+	 
+	& .menu-top {
+		& .navbar {
+			& li > a {
+				padding-top: 10px!important;
+				padding-bottom: 10px!important;
+
+				&:hover {background-color: #eee;}
+			}
+		}
+
+		& .navbar-collapse {
+			padding-right: 15px;
+			padding-left: 15px;
+		}
+	}
+}
+
+} // #header
+
+
+
