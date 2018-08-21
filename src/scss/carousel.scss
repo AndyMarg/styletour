@@ -5,6 +5,26 @@
  
     & .menu-carousel {
 
+        & .fade  {
+            opacity: 1;
+
+            & .item {
+                display: block;
+                position: absolute;
+                transition: opacity .5s;
+                top: 0;
+                left: 0;
+                width: 100%;;  
+                opacity: 0;
+
+                &.active {
+                    position: relative;
+                    opacity: 1;
+                }
+            }    
+        } 
+            
+ 
         & .indicators-wrap {
 
         }
