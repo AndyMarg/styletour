@@ -16,10 +16,12 @@
                 left: 0;
                 width: 100%;;  
                 opacity: 0;
+                z-index: 2;
 
                 &.active {
                     position: relative;
                     opacity: 1;
+                    z-index: 1;
                 }
             }  
         } 
@@ -42,7 +44,7 @@
             }
 
             & .carousel-caption {
-                top: 150px;
+                top: 170px;
                 left: 0;
     
                 & h1 {
@@ -54,16 +56,65 @@
                     margin-bottom: 40px;
                     font-size: 30px;
                 }
-    
-                & a {
-                    padding: 20px 30px;
 
-                    &:hover {
-                        color: white;                    }
+                & .button-red {
+                    padding: 20px 30px;
+                    font-size: 24px;
+                    text-decoration: none;
+                    @include default-button-colorize;
                 }
             }
-    
+        }
+
+        & .container {
+            position: relative;
+        }
+
+        @media only screen and (max-width: 1100px) {
+            & .item {
+                & .carousel-caption {
+                    left: 20%;
+
+                    & h1 { font-size: 40px; }
+                    & h3 { font-size: 22px; }
+                    & .button-red {
+                        padding: 15px 20px;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+
+        @media only screen and (max-width: 767px) {
+            & .item {
+                & .carousel-caption {
+                    left: 15%;
+
+                    & h1 { font-size: 38px; }
+                    & h3 { font-size: 20px; }
+                    & .button-red {
+                        padding: 10px 15px;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            & .item {
+                & .carousel-caption {
+                    left: 10%;
+
+                    & h1 { font-size: 25px; }
+                    & h3 { font-size: 14px; }
+                    & .button-red {
+                        padding: 5px 10px;
+                        font-size: 12px;
+                    }
+                }
+            }
         }
 
     }
+
 }
