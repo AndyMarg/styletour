@@ -1,0 +1,26 @@
+@import "partials/mixins";
+@import "partials/params";
+
+#header {
+
+    & .menu-carousel {
+        position: relative;
+    }
+
+    & .main-menu {
+        position: absolute;
+        z-index: 21;
+        width: 100%;
+        top: 30px;
+
+        & .navbar-inverse {
+            background: transparent;
+            border: none;
+        }
+
+        & .main-menu-bg {
+            background-color: #000;
+            border-radius: 3px;
+        }
+    }
+}

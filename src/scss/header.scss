@@ -25,7 +25,11 @@
 
 			& .navbar-left li > a {
 				padding: 14px;
+
+				&:first-child {padding-left: 0;}
 			}
+
+			& .navbar-right {margin-right: 0;}
 
 			& .btn-red {
 				margin-left: 10px;
