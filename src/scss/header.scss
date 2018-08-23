@@ -52,6 +52,7 @@
 
 	& .menu-top {
 		& .navbar-nav {float: none!important;}
+		& .navbar-right li > a:first-child {padding-left: 0;}
 	}
 
 }
@@ -61,11 +62,12 @@
 	& .menu-top {
 		& .navbar {
 			& li > a {
-				padding-top: 10px!important;
-				padding-bottom: 10px!important;
+				padding: 10px 15px!important;
 
 				&:hover {background-color: #eee;}
 			}
+
+			& .dropdown-menu li > a {padding: 5px 30px!important;}
 		}
 
 		& .navbar-collapse {
