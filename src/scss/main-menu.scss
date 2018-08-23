@@ -41,13 +41,41 @@
             &:hover {text-decoration: underline;}
         }
 
+        & .search {
+            position: absolute;
+            display: none;
+            right: 25px;
+            font-size: 22px;
+            color: #fff;
+            line-height: 50px;
+            cursor: pointer;
+            z-index: 30;
+        }
+
+        @media only screen and (min-width: 1200px) {
+            & .navbar-right .navbar-form {display: block!important};
+        }    
+
         @media only screen and (max-width: 1200px) {
             & .navbar-nav {float: none!important;}
-            & .navbar-right .navbar-form {margin-left: 125px;}
+            & .navbar-right .navbar-form {
+                position: absolute;
+                padding: 15px;
+                margin: 0;
+                right: 15px;
+                background: rgba(0,0,0,0.5);
+                display: none;
+            }
+            & .search {display: block;}
         }
 
         @media only screen and (max-width: 992px) {
-            & .navbar-nav li > a {font-size: 14px;}
+            & .navbar-nav li > a {
+                padding-left: 10px;
+                padding-right: 10px;
+                font-size: 14px;
+            }
+            & .search {right: 20px;}
         }
 
         @media only screen and (max-width: 768px) {
@@ -56,8 +84,10 @@
                 margin-right: -15px;
             }
             & .navbar-right .navbar-form {
-                margin-left: 0;
-                margin-right: 0;
+                position: relative;
+                display: block!important;
+                right: 0;
+                background: transparent;
             }
             & li > a:hover {
                     text-decoration: none;
@@ -65,6 +95,7 @@
             }   
             & .navbar-brand img {max-height: 50px;} 
             & .navbar-toggle.collapsed + .navbar-brand img {max-height: none;} 
+            & .search {display: none;}
         }
         @media only screen and (max-width: 480px) {
             & .navbar-toggle.collapsed + .navbar-brand img {max-height: 80px;} 
