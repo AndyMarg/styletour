@@ -9,5 +9,6 @@
 	&:hover {
 		background-color: darken($default-btn-bg-color, 5%);
 		color: $default-btn-color;
+		text-decoration: none;
 	}
 }

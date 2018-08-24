@@ -1,0 +1,20 @@
+@import "partials/mixins";
+@import "partials/params";
+
+#main-content {
+ 
+    & .sidebar {
+
+        & .about {
+            padding-right: 35px;
+            & h3 {margin: 0 0 25px;}
+            & h3 + p {margin-bottom: 30px;}
+            & p {
+                color: #585858;
+                & span {color: #0ad4b2;}
+            }
+        }
+
+    }
+
+}        

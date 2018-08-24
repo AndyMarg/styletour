@@ -15,4 +15,5 @@ $(window).load(function() {
     });
     $('#carousel-sidebar .sidebar-carousel-caption').css('max-width', carousecaptionWidth + 'px');
     $('#carousel-sidebar .carousel-indicators').css('max-width', carousecaptionWidth + 'px');
+    $('.sidebar .banner').css('max-width', carousecaptionWidth + 'px');
 });

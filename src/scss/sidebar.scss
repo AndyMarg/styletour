@@ -29,18 +29,20 @@
             }
         } //./widget
 
-        .btn-red {
-            @include  default-button-colorize;
+        @media only screen and (max-width: 1200px) {
+            & .carousel, & .banner {margin-right: 20px;}
         }
 
         @media only screen and (max-width: 992px) {
             padding-bottom: 0;
             padding-top: 0;
             border-right: none;
+            & .carousel, & .banner {margin-right: 0;}
         }
 
         @media only screen and (max-width: 540px) {
             & .col-xs-6 {width: 100%;}
+            & .carousel, & .banner {display: inline-block;;}
         }
 
     } // .sidebar
