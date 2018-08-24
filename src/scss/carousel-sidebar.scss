@@ -26,6 +26,47 @@
                 }
             }  
         } 
+
+        & .carousel {
+            margin-bottom: 20px;
+
+            & .sidebar-carousel-caption {
+                background-color: #fff;
+                border-bottom: 1px solid #e1e1e1;
+
+                & div {
+                    padding: 20px;
+                    & h4 {
+                        margin-bottom: 10px;
+                        font-size: 14px;
+                        font-weight: bold;
+                    }
+                    & p {
+                        margin-bottom: 0;
+                        font-size: 12px;
+                        color: #5b5b5b;
+                        
+                    }
+                }
+            }
+        }
+
+        & .carousel-indicators {
+            position: relative;
+            margin-left: 0;
+            padding: 10px 0;
+            left: 0;
+            bottom: 0;
+            width: auto;
+            background-color: #fff;
+            & li {
+                margin: 0 5px;
+                width: 10px;
+                height: 10px;
+                background-color: #9a9a9a;
+                &.active {background-color: #5b5b5b;}
+            }
+        }
             
     }
 
