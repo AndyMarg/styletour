@@ -29,6 +29,10 @@
             }
         } //./widget
 
+        .btn-red {
+            @include  default-button-colorize;
+        }
+
         @media only screen and (max-width: 992px) {
             padding-bottom: 0;
             padding-top: 0;
