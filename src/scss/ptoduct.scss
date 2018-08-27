@@ -10,7 +10,7 @@
             overflow: hidden;
             padding: 25px 15px;
             height: 452px;
-            transition: all .5s;
+            transition: box-shadow .5s;
             text-align: center;
             background-color: #fff;
             border: 1px solid #c0c0c0;
@@ -27,7 +27,14 @@
             }
 
             & .product-sale {
-
+                position: absolute;
+                top: 15px;
+                left: 15px;
+                width: 50px;
+                height: 50px;
+                line-height: 50px;
+                border: 1px solid #d1d1d1;
+                text-transform: uppercase;
             }
 
             & .product-img {
@@ -70,8 +77,12 @@
                     &:hover {background-color: #ececec;}
                 }
             }
-        }
 
+            @media only screen and (max-width: 768px) {
+                margin-bottom: 10px;
+            }
+    
+        }
 
     }
 }
