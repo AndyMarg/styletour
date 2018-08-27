@@ -5,6 +5,8 @@
 
     & .content {
 
+        & .products-row, .banner-row {margin-bottom: 40px;}
+
         & .product {
             position: relative;
             overflow: hidden;
@@ -81,7 +83,14 @@
             @media only screen and (max-width: 768px) {
                 margin-bottom: 10px;
             }
-    
+        }
+
+        @media only screen and (max-width: 768px) {
+            & .banner-row {text-align: center;}
+            & .banner-row img {
+                display: inline-block;
+                margin-bottom: 10px;
+            }
         }
 
     }
