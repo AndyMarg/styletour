@@ -1,0 +1,24 @@
+@import "partials/mixins";
+@import "partials/params";
+
+#footer {
+
+    & .bottom-slider {
+        padding: 35px 0;
+        background-color: #fff;
+
+        & .elastislide-wrapper {
+            box-shadow: none;
+            & .elastislide-prev{
+                left: 0;
+                background: rgb(122, 119, 119) url("../img/nav.png") no-repeat 4px 3px;
+            }
+            & .elastislide-next{
+                right: 0;
+                background: rgb(122, 119, 119) url("../img/nav.png") no-repeat 4px -17px;
+            }
+        }
+
+    } // .bottom-slider
+
+} // #footer    

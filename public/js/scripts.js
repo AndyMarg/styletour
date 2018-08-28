@@ -6,6 +6,8 @@ $(function(){
     $('.search')  .on('click', function() {
         $('.navbar-right .navbar-form').slideToggle();
     });
+    
+    $('#elastislide').elastislide();
 });
 
 $(window).load(function() {
