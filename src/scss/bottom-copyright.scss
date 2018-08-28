@@ -1,0 +1,21 @@
+@import "partials/mixins";
+@import "partials/params";
+
+#footer {
+
+    & .bottom-copyright {
+        padding: 25px 0 20px;
+        background-color: #fff;
+        & p {
+            padding-top: 20px;
+        }
+
+
+        @media only screen and (max-width: 992px) {
+            & .pay {text-align: left!important;}
+        }
+
+    }  // .bottom-copyright
+
+} // #footer    
+

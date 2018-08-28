@@ -1,0 +1,49 @@
+@import "partials/mixins";
+@import "partials/params";
+
+#footer {
+
+    & .bottom-menu {
+        padding: 30px 0;
+        background-color: #343434;
+        & h5 {
+            margin-bottom: 20px;
+            color: #c8c8c8;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        & ul {
+            list-style: none;
+            padding: 0;
+            & li a {
+                line-height: 24px;
+                color: #c8c8c8;
+            }
+        }
+
+        @media only screen and (max-width: 1200px) {
+            & .social-icons {
+                margin-left: 10px;
+                & img {
+                    display: block;
+                    margin-bottom: 3px;
+                }
+            }    
+        }
+
+
+        @media only screen and (max-width: 992px) {
+            & .social-icons img {
+                display: inline;
+            }
+            & ul {
+                & li a {
+                    display: block;
+                }
+            }
+        }
+
+    }  // .bottom-menu
+
+} // #footer    
+
